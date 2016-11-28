@@ -16,6 +16,8 @@ class Notification
 
     private $data;
 
+    private $sound;
+
     public function __construct()
     {
         $this->priority = 'high';
@@ -114,5 +116,50 @@ class Notification
     public function setIcon($icon)
     {
         $this->icon = $icon;
+    }
+
+    /**
+     * @param $sound
+     * @return Notification
+     */
+    public function setSound($sound)
+    {
+        $this->sound = $sound;
+
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function getSound()
+    {
+        return $this->sound;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function isSound()
+    {
+        return $this->sound;
+    }
+
+    /**
+     * @return $this
+     */
+    public function enableSound()
+    {
+        $this->sound = true;
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
+    public function disableSound()
+    {
+        $this->sound = false;
+        return $this;
     }
 }

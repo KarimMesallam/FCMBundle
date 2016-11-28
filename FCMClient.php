@@ -41,13 +41,14 @@ class FCMClient
         $this->client = $client;
     }
 
-    public function createDeviceNotification($title = null, $body = null, $token = null)
+    public function createDeviceNotification($title = null, $body = null, $token = null, $sound = true)
     {
         $notification = new DeviceNotification();
         $notification
             ->setTitle($title)
             ->setBody($body)
-            ->setDeviceToken($token);
+            ->setDeviceToken($token)
+            ->setSound($sound);
 
         return $notification;
     }
