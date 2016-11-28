@@ -7,7 +7,7 @@ Step 1: Download the Bundle
 Execute the following command to download the latest stable version of this bundle:
 
 ```bash
-$ composer require redjanym/fcm-bundle
+$ composer require KarimMesallam/fcm-bundle
 ```
 
 This command requires you to have Composer installed globally, as explained in the [installation chapter](https://getcomposer.org/doc/00-intro.md) of the Composer documentation.
